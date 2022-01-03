@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="sidebar"> 
+        <div class="logo_content">
+            <div class="logo">
+                <a href="#"> <img src="images/logo.svg"> </a>
+                <div class="logo_name"></div>
+            </div>
+            <img src="images/menu.svg" id="btn">
+            <ul class="nav_list">
+                <li>
+                        <img src="images/search.svg" class="lupa">
+                        <input type="text" placeholder="Buscar...">
+                    </a>
+                    <span class="tooltip">Buscar</span> 
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/grid.svg">
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span> 
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/pet.svg">
+                        <span class="links_name">Pets</span>
+                    </a>
+                    <span class="tooltip">Pets</span> 
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/user.svg">
+                        <span class="links_name">Clientes</span>
+                    </a>
+                    <span class="tooltip">Clientes</span> 
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/vet.svg">
+                        <span class="links_name">Vets</span>
+                    </a>
+                    <span class="tooltip">Vets</span> 
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/settings.svg">
+                        <span class="links_name">Configurações</span>
+                    </a>
+                    <span class="tooltip">Configurações</span> 
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="images/photo.jpg">
+                        <div class="name_job">
+                            <div class="name">Eleanor Paiva</div>
+                            <div class="job"> Veterinária</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/log-out.svg" class='log_out'>
+            </div>
+       </div>
+
+       <script>
+           let btn = document.querySelector("#btn");
+           let sidebar = document.querySelector(".sidebar");
+           let lupa = document.querySelector(".lupa");
+
+            btn.onclick = function () {
+                sidebar.classList.toggle("active")
+            }
+            
+            lupa.onclick = function () {
+                sidebar.classList.toggle("active")
+            }
+       </script>
+</body>
+</html>
